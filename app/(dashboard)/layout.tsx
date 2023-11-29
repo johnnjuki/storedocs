@@ -1,5 +1,5 @@
 import { getServerSession } from "next-auth";
-import { NEXT_AUTH_OPTIONS } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "../api/auth/[...nextauth]/route";
 import { redirect } from "next/navigation";
 
 import { NextAuthProvider } from "@storedocs/providers/next-auth";
@@ -11,7 +11,7 @@ type AuthenticatedDashboardLayoutProps = {
 export default async function AuthenticatedDashboardLayout({
   children,
 }: AuthenticatedDashboardLayoutProps) {
-  const session = await getServerSession(NEXT_AUTH_OPTIONS);
+  const session = await getServerSession(authOptions);
   if (!session) {
     redirect("/signin");
   }
