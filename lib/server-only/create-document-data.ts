@@ -1,7 +1,8 @@
 "use server";
 
-import { prisma } from "../db";
 import { DocumentDataType } from "@prisma/client";
+
+import { prisma } from "../db";
 
 type CreateDocumentDataOptions = {
   type: DocumentDataType;

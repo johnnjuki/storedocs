@@ -1,7 +1,8 @@
 "use client"
 
-import { megabytesToBytes } from "@storedocs/lib/unit-conversion";
 import { useDropzone } from "react-dropzone";
+
+import { megabytesToBytes } from "@storedocs/lib/unit-conversion";
 import { Card, CardContent } from "./card";
 
 type DocumentDropZoneProps = {

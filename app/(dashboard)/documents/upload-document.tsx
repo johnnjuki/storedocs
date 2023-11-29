@@ -1,11 +1,12 @@
 "use client";
 
+import { Loader } from "lucide-react";
+import { useState } from "react";
+
 import { DocumentDropZone } from "@storedocs/components/ui/document-dropzone";
 import { useToast } from "@storedocs/components/ui/use-toast";
 import { putFile } from "@storedocs/lib/upload/put-file";
 import { cn } from "@storedocs/lib/utils";
-import { Loader } from "lucide-react";
-import { useState } from "react";
 
 export type UploadDocumentProps = {
   className?: string;
