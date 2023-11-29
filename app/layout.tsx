@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { NextAuthProvider } from "@storedocs/providers/next-auth";
-import { getServerSession } from "next-auth";
 
-import { authOptions } from "./api/auth/[...nextauth]/route";
+import { Toaster } from "@storedocs/components/ui/toaster";
 
 import "./globals.css";
 
@@ -19,13 +17,12 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const session = await getServerSession(authOptions);
-
   return (
-    <NextAuthProvider session={session}>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
-      </html>
-    </NextAuthProvider>
+    <html lang="en">
+      <body className={inter.className}>
+        <main>{children}</main>
+        <Toaster />
+      </body>
+    </html>
   );
 }
