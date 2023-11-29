@@ -23,7 +23,7 @@ export default async function AuthenticatedDashboardLayout({
   return (
     <NextAuthProvider session={session}>
       <Header user={user} />
-      <main className="mx-auto max-w-screen-xl">{children}</main>
+      <main>{children}</main>
     </NextAuthProvider>
   );
 }

@@ -1,7 +1,9 @@
+import { UploadDocument } from "./upload-document";
+
 export default function Page() {
   return (
-    <main className=" flex h-screen flex-col items-center justify-center px-4 md:px-8">
-      <div className="mb-4">Dashboard / Documents</div>
+    <main className="mx-auto w-full max-w-screen-xl px-4 md:px-8">
+      <UploadDocument />
     </main>
   );
 }
