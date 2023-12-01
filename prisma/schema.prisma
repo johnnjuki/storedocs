@@ -35,13 +35,14 @@ model Session {
 }
 
 model User {
-  id            Int       @id @default(autoincrement())
+  id            Int        @id @default(autoincrement())
   name          String?
-  email         String?   @unique
+  email         String?    @unique
   emailVerified DateTime?
   image         String?
   accounts      Account[]
   sessions      Session[]
+  Document      Document[]
 }
 
 model VerificationToken {
@@ -50,4 +51,31 @@ model VerificationToken {
   expires    DateTime
 
   @@unique([identifier, token])
+}
+
+model Document {
+  id             Int          @id @default(autoincrement())
+  userId         Int
+  User           User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title          String
+  documentDataId String
+  documentData   DocumentData @relation(fields: [documentDataId], references: [id], onDelete: Cascade)
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  @@unique([documentDataId])
+  @@index([userId])
+}
+
+enum DocumentDataType {
+  S3_PATH
+  BYTES
+  BYTES_64
+}
+
+model DocumentData {
+  id       String           @id @default(cuid())
+  type     DocumentDataType
+  data     String
+  Document Document?
 }
