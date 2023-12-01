@@ -6,7 +6,8 @@ import { Document } from "@prisma/client";
 import { LocaleDate } from "@storedocs/components/formatter/locale-date";
 
 import { DataTableTitle } from "./data-table-title";
-import { DataTableActionButton } from "./data-table-action-button";
+import { DataTableActionButton } from "./data-table-action-download";
+import { DataTableActionDropdown } from "./data-table-action-dropdown";
 
 export const columns: ColumnDef<Document>[] = [
   {
@@ -25,7 +26,7 @@ export const columns: ColumnDef<Document>[] = [
       return (
         <div className="flex items-center gap-x-4">
           <DataTableActionButton row={row.original} />
-          {/* <DataTableActionDropdown row={row.original} /> */}
+          <DataTableActionDropdown row={row.original} />
         </div>
       );
     },
