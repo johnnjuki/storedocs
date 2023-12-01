@@ -104,7 +104,7 @@ export const DataTableActionDropdown = ({
       <DropdownMenu>
         <DropdownMenuTrigger>
           <span className="sr-only">Open menu</span>
-          <MoreHorizontal className="h-4 w-4" />
+          <MoreHorizontal className="h-4 w-4 text-muted-foreground" />
         </DropdownMenuTrigger>
 
         <DropdownMenuContent>
