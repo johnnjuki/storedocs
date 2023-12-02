@@ -34,7 +34,7 @@ export const DocumentDropZone = ({
 
   return (
     <Card role="button" className="group p-8 hover:cursor-pointer" aria-disabled={disabled} {...getRootProps()} {...props}>
-      <CardContent className="flex flex-col items-center justify-center">
+      <CardContent className="flex flex-col items-center justify-center text-center">
         <input {...getInputProps()} />
         <p className="font-medium text-muted-foreground group-hover:text-foreground">
           Add a document
