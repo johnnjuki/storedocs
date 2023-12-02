@@ -18,7 +18,7 @@ export default async function DocumentsPage() {
       <UploadDocument />
 
       <div className="mt-12">
-        <h1 className="text-2xl font-semibold">Documents</h1>
+        <h1 className="text-2xl md:text-3xl font-semibold">Documents</h1>
         <DataTable columns={columns} data={data} />
       </div>
     </div>

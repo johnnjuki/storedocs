@@ -32,7 +32,7 @@ export const Header = ({ className, user, ...props }: HeaderProps) => {
     >
       <div className="mx-auto flex w-full max-w-screen-lg items-center justify-between px-4 md:px-8">
         <Link href="/">
-          <div className="font-bold text-3xl">Storedocs</div>
+          <div className="font-bold text-2xl md:text-3xl ">Storedocs</div>
         </Link>
 
         <ProfileDropdown user={user} />
