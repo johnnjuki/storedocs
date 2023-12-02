@@ -1,3 +1,3 @@
 # Storedocs
 
-Open Source document storage.
+Open source cloud document storage.
