@@ -14,11 +14,11 @@ export default async function DocumentsPage() {
   });
 
   return (
-    <div className="mx-auto w-full max-w-screen-xl px-4 md:px-8">
+    <div className="mx-auto w-full max-w-screen-lg px-4 md:px-8">
       <UploadDocument />
 
       <div className="mt-12">
-        <h1 className="text-4xl font-semibold">Documents</h1>
+        <h1 className="text-3xl font-semibold">Documents</h1>
         <DataTable columns={columns} data={data} />
       </div>
     </div>

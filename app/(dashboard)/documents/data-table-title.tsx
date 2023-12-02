@@ -11,5 +11,5 @@ export const DataTableTitle = ({ title }: DataTableTitleProps) => {
     return null;
   }
 
-  return <div>{title}</div>;
+  return <div className="block max-w-[10rem] truncate font-medium md:max-w-[20rem]">{title}</div>;
 };

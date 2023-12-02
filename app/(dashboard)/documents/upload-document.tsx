@@ -42,7 +42,7 @@ export const UploadDocument = ({ className }: UploadDocumentProps) => {
       refresh();
     } catch (error) {
       toast({
-        title: "Error",
+        title: "Something went wrong",
         description:
           "An error occurred while uploading your document. Please try again.",
         variant: "destructive",
@@ -53,7 +53,7 @@ export const UploadDocument = ({ className }: UploadDocumentProps) => {
   };
 
   return (
-    <div className={cn("relative mt-12", className)}>
+    <div className={cn("relative mt-8", className)}>
       <DocumentDropZone onDrop={onFileDrop} />
 
       {isLoading && (

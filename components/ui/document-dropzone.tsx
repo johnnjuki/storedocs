@@ -29,7 +29,7 @@ export const DocumentDropZone = ({
         onDrop(acceptedFile);
       }
     },
-    maxSize: megabytesToBytes(50),
+    maxSize: megabytesToBytes(2),
   });
 
   return (
@@ -41,6 +41,9 @@ export const DocumentDropZone = ({
         </p>
         <p className="mt-1 text-sm text-muted-foreground/80">
           Drag & drop your document here.
+        </p>
+        <p className="mt-1 text-sm text-muted-foreground/80">
+          2 MB max size.
         </p>
       </CardContent>
     </Card>

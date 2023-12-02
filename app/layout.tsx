@@ -7,6 +7,7 @@ import { Toaster } from "@storedocs/components/ui/toaster";
 
 import "./globals.css";
 import { LocaleProvider } from "@storedocs/providers/client-only/locale";
+import { ThemeProvider } from "@storedocs/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,8 +27,15 @@ export default async function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <LocaleProvider locale={locale}>
-          <main>{children}</main>
-          <Toaster />
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <main>{children}</main>
+            <Toaster />
+          </ThemeProvider>
         </LocaleProvider>
       </body>
     </html>
