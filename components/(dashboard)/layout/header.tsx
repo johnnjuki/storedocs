@@ -24,7 +24,7 @@ export const Header = ({ className, user, ...props }: HeaderProps) => {
   return (
     <header
       className={cn(
-        "sticky top-0 z-50 flex h-16 w-full items-center border-b border-b-transparent backdrop-blur-2xl duration-200 ",
+        "sticky top-0 z-50 flex h-24 w-full items-center border-b border-b-transparent backdrop-blur-2xl duration-200 ",
         scrollY > 5 && "border-b-border",
         className,
       )}
