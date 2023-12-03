@@ -4,9 +4,9 @@ Storedocs is an open-source web application for cloud document storage. It provi
 
 ## About this project
 
-Storedocs is designed with the aim of making document storage easy and accessible for everyone. It leverages modern web technologies to provide a secure and efficient platform for managing your documents. Whether you're looking to store your personal files or share documents within a team, Storedocs offers a simple and flexible solution. 
+Storedocs is designed with the aim of making document storage easy and accessible for everyone. It leverages modern web technologies to provide a secure and efficient platform for managing your documents. Whether you're looking to store your personal files or share documents within a team, Storedocs offers a simple and flexible solution.
 
-The project is open-source, inviting developers to contribute and help improve the platform. We believe in the power of community and look forward to seeing the project grow with your contributions.
+This project is inspired by [Documenso](https://documenso.com) - A document-signing tool. Please do check it out.
 
 ## Tech Stack
 
