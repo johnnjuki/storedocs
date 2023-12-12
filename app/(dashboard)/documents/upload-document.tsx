@@ -53,7 +53,7 @@ export const UploadDocument = ({ className }: UploadDocumentProps) => {
   };
 
   return (
-    <div className={cn("relative mt-8", className)}>
+    <div className={cn("relative mt-6", className)}>
       <DocumentDropZone onDrop={onFileDrop} />
 
       {isLoading && (

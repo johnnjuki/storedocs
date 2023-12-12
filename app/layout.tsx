@@ -5,9 +5,8 @@ import { getLocale } from "@storedocs/lib/server-only/headers/get-locale";
 
 import { Toaster } from "@storedocs/components/ui/toaster";
 
-import "./globals.css";
 import { LocaleProvider } from "@storedocs/providers/client-only/locale";
-import { ThemeProvider } from "@storedocs/components/theme-provider";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
