@@ -27,15 +27,8 @@ export default async function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <LocaleProvider locale={locale}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <main>{children}</main>
-            <Toaster />
-          </ThemeProvider>
+          <main>{children}</main>
+          <Toaster />
         </LocaleProvider>
       </body>
     </html>
