@@ -40,7 +40,7 @@ export const DocumentDropZone = ({
           Add a document
         </p>
         <p className="mt-1 text-sm text-muted-foreground/80">
-          Drag & drop your document here.
+          Drag & drop your pdf document here.
         </p>
         <p className="mt-1 text-sm text-muted-foreground/80">
           2 MB max size.
